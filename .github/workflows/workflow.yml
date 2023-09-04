@@ -40,7 +40,7 @@ jobs:
         id: vars
         run: echo "::set-output name=tag::${GITHUB_REF#refs/*/}"
 
-      - name: Configure AWS Role from AWS account
+      - name: Configure AWS Role cred from AWS account
         uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: ${{ secrets.AWS_ROLE }}
