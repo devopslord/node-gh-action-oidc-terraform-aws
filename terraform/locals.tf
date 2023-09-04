@@ -15,7 +15,7 @@ locals {
     name     = "tf-alb"
     internal = false
     target_group = {
-      name     = "tf-alb-tg"
+      name     = "tf-alb-tgc"
       port     = 80
       protocol = "HTTP"
     }
